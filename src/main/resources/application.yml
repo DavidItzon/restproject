@@ -1,0 +1,19 @@
+spring:
+  #Base de datos Properties
+  datasource:
+    url: jdbc:mysql://localhost:3306/crud_project?useSSL=false
+    username: root
+    password: Caluloxholacomo00
+
+   #JPA Properties
+  jpa:
+
+    show-sql: true
+    hibernate:
+      ddl-auto: none  #Permite que la tabla de la base de datos se actualice segun la Entidad en Spring : auto or none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  resources:
+    chain:
+      enabled: true
